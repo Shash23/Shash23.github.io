@@ -9,22 +9,22 @@
 
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
+    
+
     <script>
         function showSection(sectionId) {
-            
             document.querySelectorAll('section').forEach(section => {
                 section.style.display = 'none';
             });
-
-            
-            document.getElementById(sectionId).style.display = 'block';
+            const target = document.getElementById(sectionId);
+            if (target) {
+                target.style.display = 'block';
+            }
         }
 
-        
         document.addEventListener('DOMContentLoaded', () => {
             showSection('about');
         });
-        
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
@@ -32,66 +32,142 @@
 
 </head>
 <body>
-    
     <br>
     <br>
     <br>
     <br>
     <div class="container">
     
-        <h1 class="latex-dark-auto">shashwat ghevde</h1>
-        <p class="latex-light-auto" style="text-align: center;">ghevde@wisc.edu</p>
-        
-        <div class="nav" style="text-align: center;">
-            <a href="#" onclick="showSection('about')" style="margin-right: 10px;">{about}</a> 
-            <a href="#" onclick="showSection('work')" style="margin-right: 10px;">{projects}</a>
-            <a href="#" onclick="showSection('resume')" style="margin-right: 10px;">{resume}</a>
+        <div class="header">
+            <img src="profile.png" alt="profile" class="profile-avatar">
+            <div class="header-text">
+                <h1 class="latex-dark-auto">shashwat ghevde</h1>
+                <p class="latex-light-auto header-email">ghevde@wisc.edu</p>
+                <p class="latex-light-auto header-meta">university of wisconsin–madison</p>
+                <p class="latex-light-auto header-meta">boston, ma | madison, wi</p>
+                <div class="nav">
+                    <a href="#" onclick="showSection('about')" style="margin-right: 10px;">{about}</a> 
+                    <a href="#" onclick="showSection('work')" style="margin-right: 10px;">{projects}</a>
+                    <a href="#" onclick="showSection('experience')" style="margin-right: 10px;">{experience}</a>
+                </div>
+            </div>
         </div>
 
-        <!---<div id="p5-container"></div> -->
 
         <section id="about" style="display: none;">
 
             <h4>i. about</h4>
-            <p>hey, i'm an bs/ms student at the university of wisconsin-madison! in my free time, i love playing soccer, running, and hiking. </p>
+            <div class="about-lines">
+                <p>i'm a bs/ms student in computer science and data science at <a href="https://www.wisc.edu/" target="_blank">the university of wisconsin–madison</a>.</p>
+                <p>i like working on projects at the intersection of machine learning and data systems.</p>
+                <p>previously, i've been a software engineering intern at <a href="https://www.fidelity.com/" target="_blank">fidelity investments</a>, a software engineer at the <a href="https://business.wisc.edu/" target="_blank">hawk center for investment analysis</a>, and a teaching and research assistant in the <a href="https://www.cs.wisc.edu/" target="_blank">cs department</a>.</p>
+                <p>i was also president of <a href="https://cardinaltradinguw.com/" target="_blank">cardinal trading group</a>, uw–madison's quantitative finance organization.</p>
+                <p>reach out at <a href="mailto:ghevde@wisc.edu">ghevde@wisc.edu</a>!</p>
+            </div>
 
-            
-            
         </section>
 
         <section id="work" style="display: none;">
 
-            <h4>ii. work</h4>
+            <h4>ii. projects</h4>
 
-            <p>this section is currently in progress, so for the meantime, feel free to check out my <a href="https://github.com/Shash23" target="_blank">Github</a>!</p>
+            <p class="projects-overview">here are a few machine learning and systems projects i've been working on recently. you can see more on <a href="https://github.com/Shash23" target="_blank">github</a>.</p>
 
+            <div class="projects-section">
+
+                <h5>machine learning & natural language processing</h5>
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <h6><a href="https://github.com/Shash23/flan-t5-stance-classification" target="_blank">flan-t5-stance-classification</a></h6>
+                        <p class="project-description">
+                            Parameter-efficient fine-tuning of FLAN-T5 using LoRA for stance classification, with data augmentation, class balancing, and memory-optimized training under limited GPU resources.
+                        </p>
+                        <p class="project-tags">nlp · flan-t5 · lora · text classification</p>
+                    </article>
+
+                    <article class="project-card">
+                        <h6><a href="https://github.com/Shash23/mini-gpt" target="_blank">mini-gpt</a></h6>
+                        <p class="project-description">
+                            Lightweight implementation of a GPT-style model for character-level text generation, focused on clarity and educational value rather than scale.
+                        </p>
+                        <p class="project-tags">language models · transformers · jupyter notebook</p>
+                    </article>
+
+                    <article class="project-card">
+                        <h6><a href="https://github.com/Shash23/Rolled_Badger" target="_blank">Rolled_Badger</a></h6>
+                        <p class="project-description">
+                            Personalized running coach that learns athlete fatigue and recommends daily workouts and routes using Strava data.
+                        </p>
+                        <p class="project-tags">time-series · recommender systems · python</p>
+                    </article>
+
+                    <article class="project-card">
+                        <h6><a href="https://github.com/Shash23/black-scholes-pinn" target="_blank">black-scholes-pinn</a></h6>
+                        <p class="project-description">
+                            Physics-informed neural network that solves the Black-Scholes partial differential equation with boundary conditions and no-arbitrage constraints for option pricing.
+                        </p>
+                        <p class="project-tags">pytorch · physics-informed neural networks · pde · numerical methods</p>
+                    </article>
+
+                </div>
+
+                <h5>data systems & databases</h5>
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <h6><a href="https://github.com/Shash23/robust-query-optimization-duckdb" target="_blank">robust-query-optimization-duckdb</a></h6>
+                        <p class="project-description">
+                            Experimental evaluation of Robust Predicate Transfer in DuckDB on the Star Schema Benchmark, measuring runtime, join cardinalities, and memory across scale factors.
+                        </p>
+                        <p class="project-tags">python · duckdb · query optimization · data systems</p>
+                    </article>
+
+                </div>
+
+                <h5>software engineering & systems</h5>
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <h6><a href="https://github.com/Shash23/Canary-Gate" target="_blank">Canary-Gate</a></h6>
+                        <p class="project-description">
+                            Real-time behavioral firewall that predicts the consequences of a user’s action and intervenes before phishing and social engineering attacks succeed.
+                        </p>
+                        <p class="project-tags">javascript · security · real-time systems</p>
+                    </article>
+
+                </div>
+
+            </div>
+
+            <h5>technical skills</h5>
+            <div class="skills-block">
+                <p><b>programming & scripting</b>: python, java, c++, sql, go, javascript, r, bash, unix/linux</p>
+                <p><b>machine learning</b>: pytorch, hugging face transformers, flan-t5, scikit-learn, pandas, numpy, scipy</p>
+                <p><b>cloud & devops</b>: aws, google cloud platform (gcp), kubernetes, grpc, docker, jenkins, git, ci/cd, opentelemetry, datadog, grafana, terraform, ansible</p>
+                <p><b>data systems & web dev</b>: postgresql, mongodb, dynamodb, bigquery, spark, kafka, fastapi, django, flask, react, node.js, express.js</p>
+            </div>
 
         </section>
 
-        <section id="resume" style="display: none;">
+        <section id="experience" style="display: none;">
 
-            <h4>iii. resume</h4>
+            <h4>iii. experience</h4>
 
-            <p><b>education</b></p>
+            <p><b>work experience</b> (<a href="https://www.linkedin.com/in/shashwat-ghevde-22843b202/" target="_blank">view on linkedin</a>)</p>
 
-            <p>University of Wisconsin - Madison (2022 - 2026)</p>
-            <p>BS/MS in Computer Science & Data Science</p>
+            <p>Graduate Research Assistant, <a href="https://cdis.wisc.edu/" target="_blank">Department of Computer Sciences</a>, University of Wisconsin–Madison</p>
 
-            <p><b>work experience</b></p>
+            <p>Software Engineering Intern x 2 @ <a href="https://www.fidelity.com/" target="_blank">Fidelity Investments</a>, Boston, MA</p>
 
-            <p></p>
+            <p>Software Engineer @ <a href="https://business.wisc.edu/centers/hawk-center/" target="_blank">Hawk Center for Investment Analysis, Wisconsin School of Business</a>, Madison, WI</p>
 
-            <p>software engineering intern @ <a href="https://www.fidelity.com/" target="_blank">Fidelity Investments</a> (summer 2024, 2025)</p>
-              
-            <p>swe @ <a href="https://business.wisc.edu/centers/hawk-center/" target="_blank">Hawk Center for Investment Analysis, Wisconsin School of Business</a> (fall/spring 2024/2025)</p>
-
-            <p>president @ <a href="https://cardinaltradinguw.com/" target="_blank">Cardinal Trading Group</a> (2025)</p>
-            
-            <p></p>
-            <p>undergraduate teaching assistant, undergraduate research assistant @ university of wisconsin-madison (2023)</p>
-            <p></p>
+            <p>Undergraduate Teaching Assistant, <a href="https://cdis.wisc.edu/" target="_blank">Department of Computer Sciences</a>, University of Wisconsin–Madison</p>
 
             <br>
+
+            <p><b>organizations</b></p>
+            <p>former president, <a href="https://cardinaltradinguw.com/" target="_blank">cardinal trading group</a></p>
 
         </section>
 
@@ -105,7 +181,7 @@
 
         <a href="https://github.com/Shash23" target="_blank" style="margin-right: 100px;">{github}: Shash23</a>        
         <a href="https://www.linkedin.com/in/shashwat-ghevde-22843b202/" target="_blank" style="margin-right: 100px;">{linkedin}: Shashwat Ghevde</a>
-        <a>2025@SGK</a>
+        <a>2026@SGK</a>
     </div>
 
 

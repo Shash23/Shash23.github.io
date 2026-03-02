@@ -761,3 +761,134 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
+
+  /* Projects section */
+  .projects-section {
+    margin-top: 1.5rem;
+  }
+
+  .projects-section h5 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-card {
+    border: 1px solid var(--table-border-color);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    background-color: var(--kbd-bg-color);
+  }
+
+  .project-card h6 {
+    margin-top: 0;
+    margin-bottom: 0.35rem;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .project-description {
+    margin: 0;
+    font-size: 0.98rem;
+  }
+
+  .project-tags {
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    font-style: italic;
+  }
+
+  .projects-more {
+    margin-top: 0.5rem;
+  }
+
+  .about-lines p {
+    margin-bottom: 0.65rem;
+  }
+  
+  /* Softer default link style (warm tone to match avatar) */
+  a,
+  a:visited {
+    color: hsl(24, 70%, 45%);
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    color: hsl(24, 75%, 38%);
+    text-decoration: none;
+  }
+
+  /* Exception that should keep an underline but share palette */
+  .projects-overview a,
+  .projects-overview a:visited {
+    text-decoration: underline;
+  }
+
+  /* Footer links: same palette, with underline */
+  .socials a,
+  .socials a:visited {
+    text-decoration: underline;
+  }
+
+  .skills-block p {
+    margin-bottom: 0.35rem;
+    font-size: 1rem;
+  }
+
+  /* Header layout */
+  .header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--footnotes-border-color);
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-avatar {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: 0 0 auto;
+  }
+
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-text h1 {
+    text-align: left;
+    margin-bottom: 0.25rem;
+  }
+
+  .header-text p {
+    text-align: left;
+    margin-bottom: 0.15rem;
+    hyphens: none;
+  }
+
+  .nav {
+    text-align: left;
+  }
+
+  .header-email {
+    font-size: 1.02rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .header-meta {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    opacity: 0.9;
+  }
