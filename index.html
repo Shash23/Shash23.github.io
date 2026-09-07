@@ -1,189 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#faf7f2" />
     <title>Shashwat Ghevde</title>
+    <meta
+      name="description"
+      content="I'm a software engineer at Amazon Web Services and a graduate student at UW–Madison's College of Computing &amp; Artificial Intelligence."
+    />
+    <link rel="canonical" href="https://shash23.github.io/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Shashwat Ghevde" />
+    <meta property="og:title" content="Shashwat Ghevde" />
+    <meta
+      property="og:description"
+      content="I'm a software engineer at Amazon Web Services and a graduate student at UW–Madison's College of Computing &amp; Artificial Intelligence."
+    />
+    <meta property="og:url" content="https://shash23.github.io/" />
+    <meta name="twitter:card" content="summary" />
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&family=Geist+Mono:wght@400&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="site-header">
+        <h1 class="intro-heading">
+          <span class="intro-text">Shashwat Ghevde</span>
+        </h1>
+      </header>
 
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    
+      <main class="site-main">
+        <section class="page-section">
+          <p>
+            Hi, I'm a software engineer at
+            <a href="https://aws.amazon.com/" target="_blank" rel="noopener"
+              >Amazon Web Services</a
+            >
+            and a graduate student at UW–Madison's
+            <a href="https://cai.wisc.edu/" target="_blank" rel="noopener"
+              >College of Computing &amp; Artificial Intelligence</a
+            >.
+          </p>
+          <p>
+            In the summer of 2026, I was a research intern at
+            <a href="https://www.lacapm.com/" target="_blank" rel="noopener"
+              >Los Angeles Capital Management</a
+            >, writing GPU-native libraries and tooling to accelerate
+            quantitative research workflows. I was also a software engineering
+            intern (x2) at
+            <a href="https://www.fidelity.com/" target="_blank" rel="noopener"
+              >Fidelity Investments</a
+            >
+            on the Architecture and Engineering (FAE) team.
+          </p>
+          <p>
+            At UW–Madison, I helped start the Capital Fund, UW–Madison's first
+            quantitative trading fund, and was president of
+            <a
+              href="https://www.tradersatwisconsin.com/"
+              target="_blank"
+              rel="noopener"
+              >Traders at Wisconsin</a
+            >, UW–Madison's quant finance organization.
+          </p>
+          <p>In my free time, I love running, soccer, and chess!</p>
 
-    <script>
-        function showSection(sectionId) {
-            document.querySelectorAll('section').forEach(section => {
-                section.style.display = 'none';
-            });
-            const target = document.getElementById(sectionId);
-            if (target) {
-                target.style.display = 'block';
-            }
-        }
+          <p>
+            Reach out at
+            <a href="mailto:shashwatghevde@gmail.com">shashwatghevde@gmail.com</a
+            >
+          </p>
+        </section>
+      </main>
 
-        document.addEventListener('DOMContentLoaded', () => {
-            showSection('about');
-        });
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-
-
-</head>
-<body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="container">
-    
-        <div class="header">
-            <img src="profile.png" alt="profile" class="profile-avatar">
-            <div class="header-text">
-                <h1 class="latex-dark-auto">shashwat ghevde</h1>
-                <p class="latex-light-auto header-email">ghevde@wisc.edu</p>
-                <p class="latex-light-auto header-meta">university of wisconsin–madison</p>
-                <p class="latex-light-auto header-meta">boston, ma | madison, wi</p>
-                <div class="nav">
-                    <a href="#" onclick="showSection('about')" style="margin-right: 10px;">{about}</a> 
-                    <a href="#" onclick="showSection('work')" style="margin-right: 10px;">{projects}</a>
-                    <a href="#" onclick="showSection('experience')" style="margin-right: 10px;">{experience}</a>
-                </div>
-            </div>
+      <footer class="site-footer">
+        <div class="site-footer-icons">
+          <a
+            class="icon-link"
+            href="https://github.com/Shash23"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.9 3.17 9.06 7.57 10.53.55.1.75-.24.75-.53v-2.05c-3.08.67-3.73-1.3-3.73-1.3-.5-1.29-1.23-1.63-1.23-1.63-1.01-.69.08-.67.08-.67 1.12.08 1.7 1.15 1.7 1.15 1 1.7 2.62 1.21 3.26.93.1-.72.39-1.21.7-1.49-2.46-.28-5.05-1.23-5.05-5.48 0-1.21.43-2.2 1.14-2.98-.11-.28-.5-1.41.11-2.94 0 0 .93-.3 3.05 1.14a10.6 10.6 0 0 1 5.56 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.53.22 2.66.11 2.94.71.78 1.14 1.77 1.14 2.98 0 4.26-2.6 5.2-5.07 5.47.4.35.76 1.03.76 2.08v3.08c0 .3.2.64.76.53 4.4-1.47 7.56-5.63 7.56-10.53C23.1 5.33 18.27.5 12 .5Z"
+              />
+            </svg>
+          </a>
+          <a
+            class="icon-link"
+            href="https://www.linkedin.com/in/shashwat-ghevde-22843b202/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <svg
+              width="17"
+              height="19"
+              viewBox="0 0 448 512"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+              />
+            </svg>
+          </a>
+          <a
+            class="icon-link"
+            href="https://x.com/shzsh23"
+            target="_blank"
+            rel="noopener"
+            aria-label="X"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"
+              />
+            </svg>
+          </a>
+          <a
+            class="icon-link"
+            href="mailto:shashwatghevde@gmail.com"
+            aria-label="Email"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m2 7 10 6 10-6" />
+            </svg>
+          </a>
+          <span class="footer-credit">2026 @ SGK</span>
         </div>
-
-
-        <section id="about" style="display: none;">
-
-            <h4>i. about</h4>
-            <div class="about-lines">
-                <p>i'm a bs/ms student in computer science and data science at <a href="https://www.wisc.edu/" target="_blank">the university of wisconsin–madison</a>.</p>
-                <p>i like working on projects at the intersection of machine learning and data systems.</p>
-                <p>previously, i've been a software engineering intern at <a href="https://www.fidelity.com/" target="_blank">fidelity investments</a>, a software engineer at the <a href="https://business.wisc.edu/" target="_blank">hawk center for investment analysis</a>, and a teaching and research assistant in the <a href="https://www.cs.wisc.edu/" target="_blank">cs department</a>.</p>
-                <p>i was also president of <a href="https://cardinaltradinguw.com/" target="_blank">cardinal trading group</a>, uw–madison's quantitative finance organization.</p>
-                <p>reach out at <a href="mailto:ghevde@wisc.edu">ghevde@wisc.edu</a>!</p>
-            </div>
-
-        </section>
-
-        <section id="work" style="display: none;">
-
-            <h4>ii. projects</h4>
-
-            <p class="projects-overview">here are a few machine learning and systems projects i've been working on recently. you can see more on <a href="https://github.com/Shash23" target="_blank">github</a>.</p>
-
-            <div class="projects-section">
-
-                <h5>machine learning & natural language processing</h5>
-                <div class="projects-grid">
-
-                    <article class="project-card">
-                        <h6><a href="https://github.com/Shash23/flan-t5-stance-classification" target="_blank">flan-t5-stance-classification</a></h6>
-                        <p class="project-description">
-                            Parameter-efficient fine-tuning of FLAN-T5 using LoRA for stance classification, with data augmentation, class balancing, and memory-optimized training under limited GPU resources.
-                        </p>
-                        <p class="project-tags">nlp · flan-t5 · lora · text classification</p>
-                    </article>
-
-                    <article class="project-card">
-                        <h6><a href="https://github.com/Shash23/mini-gpt" target="_blank">mini-gpt</a></h6>
-                        <p class="project-description">
-                            Lightweight implementation of a GPT-style model for character-level text generation, focused on clarity and educational value rather than scale.
-                        </p>
-                        <p class="project-tags">language models · transformers · jupyter notebook</p>
-                    </article>
-
-                    <article class="project-card">
-                        <h6><a href="https://github.com/Shash23/Rolled_Badger" target="_blank">Rolled_Badger</a></h6>
-                        <p class="project-description">
-                            Personalized running coach that learns athlete fatigue and recommends daily workouts and routes using Strava data.
-                        </p>
-                        <p class="project-tags">time-series · recommender systems · python</p>
-                    </article>
-
-                    <article class="project-card">
-                        <h6><a href="https://github.com/Shash23/black-scholes-pinn" target="_blank">black-scholes-pinn</a></h6>
-                        <p class="project-description">
-                            Physics-informed neural network that solves the Black-Scholes partial differential equation with boundary conditions and no-arbitrage constraints for option pricing.
-                        </p>
-                        <p class="project-tags">pytorch · physics-informed neural networks · pde · numerical methods</p>
-                    </article>
-
-                </div>
-
-                <h5>data systems & databases</h5>
-                <div class="projects-grid">
-
-                    <article class="project-card">
-                        <h6><a href="https://github.com/Shash23/robust-query-optimization-duckdb" target="_blank">robust-query-optimization-duckdb</a></h6>
-                        <p class="project-description">
-                            Experimental evaluation of Robust Predicate Transfer in DuckDB on the Star Schema Benchmark, measuring runtime, join cardinalities, and memory across scale factors.
-                        </p>
-                        <p class="project-tags">python · duckdb · query optimization · data systems</p>
-                    </article>
-
-                </div>
-
-                <h5>software engineering & systems</h5>
-                <div class="projects-grid">
-
-                    <article class="project-card">
-                        <h6><a href="https://github.com/Shash23/Canary-Gate" target="_blank">Canary-Gate</a></h6>
-                        <p class="project-description">
-                            Real-time behavioral firewall that predicts the consequences of a user’s action and intervenes before phishing and social engineering attacks succeed.
-                        </p>
-                        <p class="project-tags">javascript · security · real-time systems</p>
-                    </article>
-
-                </div>
-
-            </div>
-
-            <h5>technical skills</h5>
-            <div class="skills-block">
-                <p><b>programming & scripting</b>: python, java, c++, sql, go, javascript, r, bash, unix/linux</p>
-                <p><b>machine learning</b>: pytorch, hugging face transformers, flan-t5, scikit-learn, pandas, numpy, scipy</p>
-                <p><b>cloud & devops</b>: aws, google cloud platform (gcp), kubernetes, grpc, docker, jenkins, git, ci/cd, opentelemetry, datadog, grafana, terraform, ansible</p>
-                <p><b>data systems & web dev</b>: postgresql, mongodb, dynamodb, bigquery, spark, kafka, fastapi, django, flask, react, node.js, express.js</p>
-            </div>
-
-        </section>
-
-        <section id="experience" style="display: none;">
-
-            <h4>iii. experience</h4>
-
-            <p><b>work experience</b> (<a href="https://www.linkedin.com/in/shashwat-ghevde-22843b202/" target="_blank">view on linkedin</a>)</p>
-
-            <p>Graduate Research Assistant, <a href="https://cdis.wisc.edu/" target="_blank">Department of Computer Sciences</a>, University of Wisconsin–Madison</p>
-
-            <p>Software Engineering Intern x 2 @ <a href="https://www.fidelity.com/" target="_blank">Fidelity Investments</a>, Boston, MA</p>
-
-            <p>Software Engineer @ <a href="https://business.wisc.edu/centers/hawk-center/" target="_blank">Hawk Center for Investment Analysis, Wisconsin School of Business</a>, Madison, WI</p>
-
-            <p>Undergraduate Teaching Assistant, <a href="https://cdis.wisc.edu/" target="_blank">Department of Computer Sciences</a>, University of Wisconsin–Madison</p>
-
-            <br>
-
-            <p><b>organizations</b></p>
-            <p>former president, <a href="https://cardinaltradinguw.com/" target="_blank">cardinal trading group</a></p>
-
-        </section>
-
+      </footer>
     </div>
-
-    <br>
-    <br>
-    
-
-    <div class="socials" style="text-align: center;">
-
-        <a href="https://github.com/Shash23" target="_blank" style="margin-right: 100px;">{github}: Shash23</a>        
-        <a href="https://www.linkedin.com/in/shashwat-ghevde-22843b202/" target="_blank" style="margin-right: 100px;">{linkedin}: Shashwat Ghevde</a>
-        <a>2026@SGK</a>
-    </div>
-
-
-</body>
+  </body>
 </html>
