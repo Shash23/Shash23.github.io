@@ -1,6 +1,4 @@
-# wrangler files
-.wrangler
-.dev.vars*
-!.dev.vars.example
+.DS_Store
 .env*
 !.env.example
+.claude/settings.local.json
